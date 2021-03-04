@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>flyp</title>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<link rel="stylesheet" href="style_test_player.css" type="text/css"/>
+    <link rel="icon" href="favicon.png" type="image/png"/>
+	</head>
+
+	<body>
+
+<!--présentation-->
+
+		<div class="corps">
+
+			<div class="présent">
+				<div class="centre">
+					<div class="centre_text">
+						<h2 class="Bienvenue">Hippy's<br>Mind</h2>
+					</div>
+					
+						<img class="img_centre" src="image_Charlie/pochette the sound OFFICIEL.jpg" height="500px" width="500px">
+
+				</div>
+			</div>
+
+<!--album-->
+
+		<div class="container">
+        	<audio id="audio" preload="none" tabindex="0">
+    			<source src="musiques/You Need To Know That  (Feat. Marie).mp3" data-track-number="1" />
+    			<source src="musiques/The World From My Balcony - Charlie.mp3" data-track-number="2" />
+    			<source src="musiques/Waves prod axel.mp3" data-track-number="3" />
+    			<source src="musiques/Summer Night Feat. Imnol.mp3" data-track-number="4" />
+    			<source src="musiques/A Cig At The Train Station.mp3" data-track-number="5" /> 
+          <source src="musiques/The Remix of The World From my Balcony Feat. JGOTFIRE.mp3" data-track-number="6" />
+          <source src="musiques/Fck With Me Feat. JGOTFIRE.mp3" data-track-number="7" />   
+    			Your browser does not support HTML5 audio.
+    		</audio>
+
+
+<div class="player">
+
+    <div class="large-toggle-btn">
+      <i class="large-play-btn"><span class="screen-reader-text"></span></i>
+    </div>
+    <!-- /.play-box -->
+
+    <div class="info-box">
+      <div class="track-info-box">
+        <div class="track-title-text"></div>
+        <div class="audio-time">
+          <span class="current-time">00:00</span> /
+          <span class="duration">00:00</span>
+        </div>
+      </div>
+      <!-- /.info-box -->
+
+      <div class="progress-box">
+        <div class="progress-cell">
+          <div class="progress">
+            <div class="progress-buffer"></div>
+            <div class="progress-indicator"></div>
+          </div>
+        </div>
+      </div>
+
+</div>
+    <!-- /.progress-box -->
+
+    <div class="controls-box">
+      <i class="previous-track-btn disabled"><span class="screen-reader-text">&#x25C5;</span></i>
+      <i class="next-track-btn"><span class="screen-reader-text">&#x25BB;</span></i>
+    </div>
+    <!-- /.controls-box -->
+
+  </div>
+  <!-- /.player -->
+
+  <div class="play-list">
+
+    <div class="play-list-row" data-track-row="1">
+      <div class="small-toggle-btn">
+        <i class="small-play-btn"><span class="screen-reader-text">play</span></i>
+      </div>
+      <div class="track-number">
+        1.
+      </div>
+      <div class="track-title">
+        <a class="playlist-track" href="#" data-play-track="1">You need to know that<br>(feat. Marie)</a>
+      </div>
+    </div>
+    <div class="play-list-row" data-track-row="2">
+      <div class="small-toggle-btn">
+        <i class="small-play-btn"><span class="screen-reader-text">play</span></i>
+      </div>
+      <div class="track-number">
+        2.
+      </div>
+      <div class="track-title">
+        <a class="playlist-track" href="#" data-play-track="2">The world from my balcony</a>
+      </div>
+    </div>
+    <div class="play-list-row" data-track-row="3">
+      <div class="small-toggle-btn">
+        <i class="small-play-btn"><span class="screen-reader-text">play</span></i>
+      </div>
+      <div class="track-number">
+        3.
+      </div>
+      <div class="track-title">
+        <a class="playlist-track" href="#" data-play-track="3">Waves</a>
+      </div>
+    </div>
+    <div class="play-list-row" data-track-row="4">
+      <div class="small-toggle-btn">
+        <i class="small-play-btn"><span class="screen-reader-text">play</span></i>
+      </div>
+      <div class="track-number">
+        4.
+      </div>
+      <div class="track-title">
+        <a class="playlist-track" href="#" data-play-track="4">Summer night<br>(feat. Imѧnol)</a>
+      </div>
+    </div>
+    <div class="play-list-row" data-track-row="5">
+      <div class="small-toggle-btn">
+        <i class="small-play-btn"><span class="screen-reader-text">play</span></i>
+      </div>
+      <div class="track-number">
+        5.
+      </div>
+      <div class="track-title">
+        <a class="playlist-track" href="#" data-play-track="5">A cig at the train station</a>
+      </div>
+    </div>
+    <div class="play-list-row" data-track-row="6">
+      <div class="small-toggle-btn">
+        <i class="small-play-btn"><span class="screen-reader-text">play</span></i>
+      </div>
+      <div class="track-number">
+        6.
+      </div>
+      <div class="track-title">
+        <a class="playlist-track" href="#" data-play-track="6">The world from my balcony<br>(Remix feat. JGOTFIRE)</a>
+      </div>
+    </div>
+    <div class="play-list-row" data-track-row="7">
+      <div class="small-toggle-btn">
+        <i class="small-play-btn"><span class="screen-reader-text">play</span></i>
+      </div>
+      <div class="track-number">
+        7.
+      </div>
+      <div class="track-title">
+        <a class="playlist-track" href="#" data-play-track="7">Fck with me</a>
+      </div>
+    </div>
+
+ </div>
+
+<!--articles-->
+
+			<div class="article">
+				<h2 class="intro_article">Article</h2>
+					<p class="prés">son univers</p>
+			</div>
+
+			<div class="article_artiste">
+				<img class="img_artiste1" src="image_Charlie/base 2.jpeg" height="1300px" width="1000px">
+				
+				<div class="parag_article_artiste">
+					<p class="parag_article_artiste_text">Charlie jeune artiste de 18 ans accompagné de son acolyte, le saxophone, calme et apaise nos esprits tourmentés, caresse nos rêves et pensées partout où l’on soit au travers de sa musique aux ambiances tranquilles à tendance jazz.</p>
+				</div>
+			</div>
+
+
+			<div class="premier_article">
+
+				<div class="premier_article_1">
+
+					<img class="img_article1" src="image_fcgi/image00014.jpeg" height="380px" width="550px">
+
+					<div class="article1">
+						<p class="premier_article_text1">Que vous soyez dans les transports en commun, en pleine révision, ou même dans vos pensées, Charlie vous offre un moment de répit, et vous invite à vous laisser porter par sa musique.</p>
+					</div>
+				</div>
+
+				<div class="premier_article_2">
+
+					<img class="img_article2" src="image_fcgi/image00018.jpeg" height="380px" width="500px">
+
+					<div class="article2">
+						<p class="premier_article_text2">Les morceaux de Charlie n'ont pas de paroles, et à raison. L'atmosphère calme et apaisante qui y règne laisse place à sa maîtrise du saxophone.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="deuxième_article">
+
+				<div class="deuxième_article_1">
+
+					<img class="img_deuxième_article1" src="image_fcgi/IMG_3944.jpg" height="530px" width="500px">
+
+					<div class="d_article1">
+						<p class="deuxième_article_text1">Charlie ne compose pas il préfère improviser, si bien que le saxophone devient alors son moyen d'expression, son médium qui remplacerait la parole, en bref, le saxophone fait office de sa voix. Charlie n'a pas peur de sortir des chemins battus, et privilégie la passion et la créativité à tout autre chose.</p>
+					</div>
+				</div>
+
+				<div class="deuxième_article_2">
+
+					<img class="img_deuxième_article2" src="image_fcgi/image00017.jpeg" height="700px" width="500px">
+
+					<div class="d_article2">
+						<p class="deuxième_article_text2">Grâce à sa passion, il a su s'entourer d'amis talentueux, et a réalisé le captivant EP The Sound. Dans cet EP, la musique s'adresse directement à son auditeur. Chacun peut s'y identifier, ce qui fait de The Sound le parfait compagnon de réflexion, et Charlie un artiste à suivre de près.</p>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="article_artiste2">
+
+				<img class="img_artiste12" src="image_fcgi/image00012.jpeg" height="700px" width="1000px">
+				
+						<div class="parag_article_artiste2">
+							<p class="parag_article_artiste_text2">Eng<br><br>Whether you are in public transport, studying or even lost in your thoughts, Charlie offers you a moment of rest, and invites you to get into the flow thanks to his music. Charlie's tracks don't have any lyrics, which is what makes it unique. The calming atmosphere of his tracks paves the way for his virutosity of the saxophone. Charlie does not compose but instead improvises, so well that the saxophone becomes his new way of expression, his medium that would replace talking, make it short, the saxophone acts as his voice. Charlie is not afraid to open new unexplored paths, and favours passion and creativity over anything else. Thanks to his passion, he managed to surround himself with talented friends, and produced the hypnotizing EP The Sound. In this EP, music speaks directly to its listener. Anyone can identify to it, which makes The Sound the perfect thoughts-companion, and Charlie an artist to keep an eye on.</p>
+						</div>
+			</div>
+
+			<div class="justif_color">
+				<h2 class="justif_color_titre">La Couleur</h2>
+					<p class="justif_color_text">Artiste instrumentale aux vibes tranquille presque mystique,la couleur choisit à pour but de souligner cela. Un violet mystique et rythme calme qui pousse aux rêves.</p>
+			</div>
+
+
+			<div class="présent2">
+				<div class="centre2"></div>
+			</div>
+
+			<div class="espace"></div>
+<!-- mes artsites-->
+
+			<div class="artiste">
+				<h2 class="intro_artiste">Mes artistes du moment</h2>
+					<p class="pré">dans les bacs</p>
+			</div>
+
+			<div class="img_artistes">
+				<div class="img_artistes1">
+					<h2 class="nom1">Lomepal</h2>
+				</div>
+
+				<div class="img_artistes2">
+					<h2 class="nom2">Népal</h2>
+				</div>
+
+				<div class="img_artistes3">
+					<h2 class="nom3">Mac Miller</h2>
+				</div>
+			</div>
+
+
+			<div class="écoute">
+				<div class="écoute_text">
+
+					<h2 class="écoute_text_tirte">mon inspiration et mes sons</h2>
+
+					<p class="écoute_text_text">Quels sont les genres musicaux qui t'inspirent ?<br><br><br>Pour mes créations en ce moment c'est les musiques lo-fi qui m'inspirent le plus, elles sont hyper chill, et c'est un genre que j'ai découvert pendant le confinement, une période où j'avais vraiment besoin de chiller haha.</p>
+				</div>
+			</div>
+
+
+			<div class="écoute2">
+				<div class="écoute2_text">
+					
+					<p class="écoute2_text_text">Depuis quand joues-tu du saxophone ?<br><br><br>Cela fait 9 ans que je fais du saxophone, dont 5 années en école de musique. Mais à l'issue de ces 5 années j'en avais marre de faire toujours du jazz alors j'ai commencé tout seul à faire des covers de pop ou de rap.<br><br><br><br><br>Donc vous êtes plusieurs à travailler sur le même projet ? C'est génial que vous soyez plusieurs à collaborer sur l'élaboration du projet<br><br><br>J'aime bien utiliser le talent des gens qui m'entourent on va dire haha. Ce projet est arrivé à un moment de ma vie où j'avais besoin d'avoir le soutien de mes amis, donc travailler avec eux m'a permis de me sentir moins seul. C'est important de s'entourer de personnes qu'on aime pour réaliser ses projets.<br><br><br>Comment est-ce que tu nommes tes morceaux ?<br><br><br>Pour les titres j'envoyais les morceaux à une amie à la vision poétique et littéraire, et elle me proposait des titres, avec des explications sur ce qu'elle ressentait en les écoutant.</p>
+				</div>
+			</div>
+
+
+<!-- mon feed-->
+
+		<div class="feed1">
+			<h2 class="intro_feed">Mon feed</h2>
+				<p class="pré_feed">mes moments Instagram, facebook et twitter</p>
+		</div>
+
+
+		<div class="img_feed">
+				<img class="img_feed1" src="image_fcgi/Bordered Fashion Magazine Cover.jpg" height="500px" width="400px">
+
+				<img class="img_feed2" src="image_fcgi/Bordered Fashion Magazine Cover.jpg" height="500px" width="400px">
+
+				<img class="img_feed3" src="image_fcgi/Bordered Fashion Magazine Cover.jpg" height="500px" width="400px">
+		</div>
+
+		<div class="feed_text">
+			<div class="feed_text1">
+				<h2 class="réseaux1">instagram</h2>
+			</div>
+
+			<div class="feed_text2">
+				<h2 class="réseaux2">facebook</h2>
+			</div>
+
+			<div class="feed_text3">
+				<h2 class="réseaux3">twitter</h2>
+			</div>
+		</div>
+
+
+		<div class="désc_feed1">
+				<div class="désc_feed1_text">
+
+					<h2 class="désc_feed1_text_tirte">Ce que je regarde en ce moment</h2>
+
+					<p class="désc_feed1_text_text">Comment se passe la composition d'un morceau pour toi ?<br><br><br>Toutes mes compositions sont basées sur de l'improvisation. Pour mon EP The Sound j'ai fait appel à des amis pour qu'ils m'envoient des prods, puis je jouais les notes qui sonnaient le mieux.<br><br><br><br>Qu'est-ce qui t'est le plus cher dans ta musique ?<br><br><br>Ne pas avoir peur de créer et de sortir des chemins battus. J'ai toujours voulu faire de la musique mais sans savoir chanter c'était compliqué, je me suis donc dit et bien pourquoi pas remplacer la voix par le saxophone et au fur et à mesure j'ai réussi à être heureux grâce à ça.<br><br><br><br>Un conseil pour des artistes en devenir ?<br><br><br>Il ne faut pas avoir peur de ce que tu postes sur les réseaux. Tant que tu fais quelque chose que tu aimes, tu as tout gagné. On a qu'une seule vie donc il faut essayer de faire le maximum de choses qui nous plaisent.</p>
+				</div>
+			</div>
+
+			<div class="désc_feed2">
+				<div class="désc_feed2_text">
+					
+					<p class="désc_feed2_text_text"><br>Et prochainement ?<br><br><br><br>Comme je disais c'est mon ami/coloc "lesroultricks" qui fait mes prods et on est en train de préparer mon premier Ep et plusieurs single. On a commencé à travailler avec un gros studio ici à Montréal, donc oui mes projets pro vont arriver prochainement.</p>
+				</div>
+			</div>
+
+
+			<div class="conclusion">
+				<div class="conclusion_centre">
+					<div class="conclusion_centre_text">
+						<h2 class="salut">prochainement<br>chez flyp</h2>
+					</div>
+					
+					<img class="img_conclusion" src="image_fcgi/Pasted Graphic.jpg" height="500px" width="500px">
+				</div>
+			</div>
+
+
+			<div class="fin">
+				<img class="img_fin" src="image_fcgi/IMG_0533.jpg" height="70px" width="70px">
+
+					<div class="text_fin">
+						<h3 class="propri">flyp un produit Fly©</h3>
+					</div>
+
+					<div class="text_fin1">
+						<h3 class="contact">contact</h3>
+					</div>
+
+					<div class="text_fin2">
+						<h3 class="CGU">CGU</h3>
+					</div>
+				
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+    	
+    	var audioPlayer = function() {
+  "use strict";
+
+  // Private variables
+  var _currentTrack = null;
+  var _elements = {
+    audio: document.getElementById("audio"),
+    playerButtons: {
+      largeToggleBtn: document.querySelector(".large-toggle-btn"),
+      nextTrackBtn: document.querySelector(".next-track-btn"),
+      previousTrackBtn: document.querySelector(".previous-track-btn"),
+      smallToggleBtn: document.getElementsByClassName("small-toggle-btn")
+    },
+    progressBar: document.querySelector(".progress-box"),
+    playListRows: document.getElementsByClassName("play-list-row"),
+    trackInfoBox: document.querySelector(".track-info-box")
+  };
+  var _playAHead = false;
+  var _progressCounter = 0;
+  var _progressBarIndicator = _elements.progressBar.children[0].children[0].children[1];
+  var _trackLoaded = false;
+
+  /**
+   * Determines the buffer progress.
+   *
+   * @param audio The audio element on the page.
+   **/
+  var _bufferProgress = function(audio) {
+    var bufferedTime = (audio.buffered.end(0) * 100) / audio.duration;
+    var progressBuffer = _elements.progressBar.children[0].children[0].children[0];
+
+    progressBuffer.style.width = bufferedTime + "%";
+  };
+
+  /**
+   * A utility function for getting the event cordinates based on browser type.
+   *
+   * @param e The JavaScript event.
+   **/
+  var _getXY = function(e) {
+    var containerX = _elements.progressBar.offsetLeft;
+    var containerY = _elements.progressBar.offsetTop;
+
+    var coords = {
+      x: null,
+      y: null
+    };
+
+    var isTouchSuopported = "ontouchstart" in window;
+
+    if (isTouchSuopported) { //For touch devices
+      coords.x = e.clientX - containerX;
+      coords.y = e.clientY - containerY;
+
+      return coords;
+    } else if (e.offsetX || e.offsetX === 0) { // For webkit browsers
+      coords.x = e.offsetX;
+      coords.y = e.offsetY;
+
+      return coords;
+    } else if (e.layerX || e.layerX === 0) { // For Mozilla firefox
+      coords.x = e.layerX;
+      coords.y = e.layerY;
+
+      return coords;
+    }
+  };
+
+  var _handleProgressIndicatorClick = function(e) {
+    var progressBar = document.querySelector(".progress-box");
+    var xCoords = _getXY(e).x;
+
+    return (xCoords - progressBar.offsetLeft) / progressBar.children[0].offsetWidth;
+  };
+
+  /**
+   * Initializes the html5 audio player and the playlist.
+   *
+   **/
+  var initPlayer = function() {
+
+    if (_currentTrack === 1 || _currentTrack === null) {
+      _elements.playerButtons.previousTrackBtn.disabled = true;
+    }
+
+    //Adding event listeners to playlist clickable elements.
+    for (var i = 0; i < _elements.playListRows.length; i++) {
+      var smallToggleBtn = _elements.playerButtons.smallToggleBtn[i];
+      var playListLink = _elements.playListRows[i].children[2].children[0];
+
+      //Playlist link clicked.
+      playListLink.addEventListener("click", function(e) {
+        e.preventDefault();
+        var selectedTrack = parseInt(this.parentNode.parentNode.getAttribute("data-track-row"));
+
+        if (selectedTrack !== _currentTrack) {
+          _resetPlayStatus();
+          _currentTrack = null;
+          _trackLoaded = false;
+        }
+
+        if (_trackLoaded === false) {
+          _currentTrack = parseInt(selectedTrack);
+          _setTrack();
+        } else {
+          _playBack(this);
+        }
+      }, false);
+
+      //Small toggle button clicked.
+      smallToggleBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+        var selectedTrack = parseInt(this.parentNode.getAttribute("data-track-row"));
+
+        if (selectedTrack !== _currentTrack) {
+          _resetPlayStatus();
+          _currentTrack = null;
+          _trackLoaded = false;
+        }
+
+        if (_trackLoaded === false) {
+          _currentTrack = parseInt(selectedTrack);
+          _setTrack();
+        } else {
+          _playBack(this);
+        }
+
+      }, false);
+    }
+
+    //Audio time has changed so update it.
+    _elements.audio.addEventListener("timeupdate", _trackTimeChanged, false);
+
+    //Audio track has ended playing.
+    _elements.audio.addEventListener("ended", function(e) {
+      _trackHasEnded();
+    }, false);
+
+    //Audio error. 
+    _elements.audio.addEventListener("error", function(e) {
+      switch (e.target.error.code) {
+        case e.target.error.MEDIA_ERR_ABORTED:
+          alert('You aborted the video playback.');
+          break;
+        case e.target.error.MEDIA_ERR_NETWORK:
+          alert('A network error caused the audio download to fail.');
+          break;
+        case e.target.error.MEDIA_ERR_DECODE:
+          alert('The audio playback was aborted due to a corruption problem or because the video used features your browser did not support.');
+          break;
+        case e.target.error.MEDIA_ERR_SRC_NOT_SUPPORTED:
+          alert('The video audio not be loaded, either because the server or network failed or because the format is not supported.');
+          break;
+        default:
+          alert('An unknown error occurred.');
+          break;
+      }
+      trackLoaded = false;
+      _resetPlayStatus();
+    }, false);
+
+    //Large toggle button clicked.
+    _elements.playerButtons.largeToggleBtn.addEventListener("click", function(e) {
+      if (_trackLoaded === false) {
+        _currentTrack = parseInt(1);
+        _setTrack()
+      } else {
+        _playBack();
+      }
+    }, false);
+
+    //Next track button clicked.
+    _elements.playerButtons.nextTrackBtn.addEventListener("click", function(e) {
+      if (this.disabled !== true) {
+        _currentTrack++;
+        _trackLoaded = false;
+        _resetPlayStatus();
+        _setTrack();
+      }
+    }, false);
+
+    //Previous track button clicked.
+    _elements.playerButtons.previousTrackBtn.addEventListener("click", function(e) {
+      if (this.disabled !== true) {
+        _currentTrack--;
+        _trackLoaded = false;
+        _resetPlayStatus();
+        _setTrack();
+      }
+    }, false);
+
+    //User is moving progress indicator.
+    _progressBarIndicator.addEventListener("mousedown", _mouseDown, false);
+
+    //User stops moving progress indicator.
+    window.addEventListener("mouseup", _mouseUp, false);
+  };
+
+  /**
+   * Handles the mousedown event by a user and determines if the mouse is being moved.
+   *
+   * @param e The event object.
+   **/
+  var _mouseDown = function(e) {
+    window.addEventListener("mousemove", _moveProgressIndicator, true);
+    audio.removeEventListener("timeupdate", _trackTimeChanged, false);
+
+    _playAHead = true;
+  };
+
+  /**
+   * Handles the mouseup event by a user.
+   *
+   * @param e The event object.
+   **/
+  var _mouseUp = function(e) {
+    if (_playAHead === true) {
+      var duration = parseFloat(audio.duration);
+      var progressIndicatorClick = parseFloat(_handleProgressIndicatorClick(e));
+      window.removeEventListener("mousemove", _moveProgressIndicator, true);
+
+      audio.currentTime = duration * progressIndicatorClick;
+      audio.addEventListener("timeupdate", _trackTimeChanged, false);
+      _playAHead = false;
+    }
+  };
+
+  /**
+   * Moves the progress indicator to a new point in the audio.
+   *
+   * @param e The event object.
+   **/
+  var _moveProgressIndicator = function(e) {
+    var newPosition = 0;
+    var progressBarOffsetLeft = _elements.progressBar.offsetLeft;
+    var progressBarWidth = 0;
+    var progressBarIndicator = _elements.progressBar.children[0].children[0].children[1];
+    var progressBarIndicatorWidth = _progressBarIndicator.offsetWidth;
+    var xCoords = _getXY(e).x;
+
+    progressBarWidth = _elements.progressBar.children[0].offsetWidth - progressBarIndicatorWidth;
+    newPosition = xCoords - progressBarOffsetLeft;
+
+    if ((newPosition >= 1) && (newPosition <= progressBarWidth)) {
+      progressBarIndicator.style.left = newPosition + ".px";
+    }
+    if (newPosition < 0) {
+      progressBarIndicator.style.left = "0";
+    }
+    if (newPosition > progressBarWidth) {
+      progressBarIndicator.style.left = progressBarWidth + "px";
+    }
+  };
+
+  /**
+   * Controls playback of the audio element.
+   *
+   **/
+  var _playBack = function() {
+    if (_elements.audio.paused) {
+      _elements.audio.play();
+      _updatePlayStatus(true);
+      document.title = "\u25B6 " + document.title;
+    } else {
+      _elements.audio.pause();
+      _updatePlayStatus(false);
+      document.title = document.title.substr(2);
+    }
+  };
+
+  /**
+   * Sets the track if it hasn't already been loaded yet.
+   *
+   **/
+  var _setTrack = function() {
+    var songURL = _elements.audio.children[_currentTrack - 1].src;
+
+    _elements.audio.setAttribute("src", songURL);
+    _elements.audio.load();
+
+    _trackLoaded = true;
+
+    _setTrackTitle(_currentTrack, _elements.playListRows);
+
+    _setActiveItem(_currentTrack, _elements.playListRows);
+
+    _elements.trackInfoBox.style.visibility = "visible";
+
+    _playBack();
+  };
+
+  /**
+   * Sets the activly playing item within the playlist.
+   *
+   * @param currentTrack The current track number being played.
+   * @param playListRows The playlist object.
+   **/
+  var _setActiveItem = function(currentTrack, playListRows) {
+    for (var i = 0; i < playListRows.length; i++) {
+      playListRows[i].children[2].className = "track-title";
+    }
+
+    playListRows[currentTrack - 1].children[2].className = "track-title active-track";
+  };
+
+  /**
+   * Sets the text for the currently playing song.
+   *
+   * @param currentTrack The current track number being played.
+   * @param playListRows The playlist object.
+   **/
+  var _setTrackTitle = function(currentTrack, playListRows) {
+    var trackTitleBox = document.querySelector(".player .info-box .track-info-box .track-title-text");
+    var trackTitle = playListRows[currentTrack - 1].children[2].outerText;
+
+    trackTitleBox.innerHTML = null;
+
+    trackTitleBox.innerHTML = trackTitle;
+
+    document.title = trackTitle;
+  };
+
+  /**
+   * Plays the next track when a track has ended playing.
+   *
+   **/
+  var _trackHasEnded = function() {
+    parseInt(_currentTrack);
+    _currentTrack = (_currentTrack === _elements.playListRows.length) ? 1 : _currentTrack + 1;
+    _trackLoaded = false;
+
+    _resetPlayStatus();
+
+    _setTrack();
+  };
+
+  /**
+   * Updates the time for the song being played.
+   *
+   **/
+  var _trackTimeChanged = function() {
+    var currentTimeBox = document.querySelector(".player .info-box .track-info-box .audio-time .current-time");
+    var currentTime = audio.currentTime;
+    var duration = audio.duration;
+    var durationBox = document.querySelector(".player .info-box .track-info-box .audio-time .duration");
+    var trackCurrentTime = _trackTime(currentTime);
+    var trackDuration = _trackTime(duration);
+
+    currentTimeBox.innerHTML = null;
+    currentTimeBox.innerHTML = trackCurrentTime;
+
+    durationBox.innerHTML = null;
+    durationBox.innerHTML = trackDuration;
+
+    _updateProgressIndicator(audio);
+    _bufferProgress(audio);
+  };
+
+  /**
+   * A utility function for converting a time in miliseconds to a readable time of minutes and seconds.
+   *
+   * @param seconds The time in seconds.
+   *
+   * @return time The time in minutes and/or seconds.
+   **/
+  var _trackTime = function(seconds) {
+    var min = 0;
+    var sec = Math.floor(seconds);
+    var time = 0;
+
+    min = Math.floor(sec / 60);
+
+    min = min >= 10 ? min : '0' + min;
+
+    sec = Math.floor(sec % 60);
+
+    sec = sec >= 10 ? sec : '0' + sec;
+
+    time = min + ':' + sec;
+
+    return time;
+  };
+
+  /**
+   * Updates both the large and small toggle buttons accordingly.
+   *
+   * @param audioPlaying A booean value indicating if audio is playing or paused.
+   **/
+  var _updatePlayStatus = function(audioPlaying) {
+    if (audioPlaying) {
+      _elements.playerButtons.largeToggleBtn.children[0].className = "large-pause-btn";
+
+      _elements.playerButtons.smallToggleBtn[_currentTrack - 1].children[0].className = "small-pause-btn";
+    } else {
+      _elements.playerButtons.largeToggleBtn.children[0].className = "large-play-btn";
+
+      _elements.playerButtons.smallToggleBtn[_currentTrack - 1].children[0].className = "small-play-btn";
+    }
+
+    //Update next and previous buttons accordingly
+    if (_currentTrack === 1) {
+      _elements.playerButtons.previousTrackBtn.disabled = true;
+      _elements.playerButtons.previousTrackBtn.className = "previous-track-btn disabled";
+    } else if (_currentTrack > 1 && _currentTrack !== _elements.playListRows.length) {
+      _elements.playerButtons.previousTrackBtn.disabled = false;
+      _elements.playerButtons.previousTrackBtn.className = "previous-track-btn";
+      _elements.playerButtons.nextTrackBtn.disabled = false;
+      _elements.playerButtons.nextTrackBtn.className = "next-track-btn";
+    } else if (_currentTrack === _elements.playListRows.length) {
+      _elements.playerButtons.nextTrackBtn.disabled = true;
+      _elements.playerButtons.nextTrackBtn.className = "next-track-btn disabled";
+    }
+  };
+
+  /**
+   * Updates the location of the progress indicator according to how much time left in audio.
+   *
+   **/
+  var _updateProgressIndicator = function() {
+    var currentTime = parseFloat(_elements.audio.currentTime);
+    var duration = parseFloat(_elements.audio.duration);
+    var indicatorLocation = 0;
+    var progressBarWidth = parseFloat(_elements.progressBar.offsetWidth);
+    var progressIndicatorWidth = parseFloat(_progressBarIndicator.offsetWidth);
+    var progressBarIndicatorWidth = progressBarWidth - progressIndicatorWidth;
+
+    indicatorLocation = progressBarIndicatorWidth * (currentTime / duration);
+
+    _progressBarIndicator.style.left = indicatorLocation + "px";
+  };
+
+  /**
+   * Resets all toggle buttons to be play buttons.
+   *
+   **/
+  var _resetPlayStatus = function() {
+    var smallToggleBtn = _elements.playerButtons.smallToggleBtn;
+
+    _elements.playerButtons.largeToggleBtn.children[0].className = "large-play-btn";
+
+    for (var i = 0; i < smallToggleBtn.length; i++) {
+      if (smallToggleBtn[i].children[0].className === "small-pause-btn") {
+        smallToggleBtn[i].children[0].className = "small-play-btn";
+      }
+    }
+  };
+
+  return {
+    initPlayer: initPlayer
+  };
+};
+
+(function() {
+  var player = new audioPlayer();
+
+  player.initPlayer();
+})();
+    </script>
+	</body>
+
+</html>	
