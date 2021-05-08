@@ -1,6 +1,0 @@
-# Protection simple de mot de passe avec .htaccess
-AuthType Basic
-AuthName "fichiers réservés"
-AuthUserFile /< chemin absolu vers le fichier mot de passe >/.htpasswd
-AuthPGAuthoritative Off
-require user User1 User2 User3
